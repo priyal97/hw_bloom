@@ -13,6 +13,7 @@
 class myBloom : Bloom {
 public:
     myBloom(int mm);
+    myBloom(std::string filter);
     void insert(std::string item);
     bool exists(std::string item);
     std::string output();
