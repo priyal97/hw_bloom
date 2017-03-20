@@ -6,6 +6,7 @@
 #define BLOOMFILTER_MYBLOOM_H
 
 #include "Bloom.h"
+#include <cstring>
 
 /**
  * A trivial implementation of the Bloom class
