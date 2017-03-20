@@ -11,7 +11,7 @@ myBloom::myBloom(int mm) : Bloom(mm) { filter = new char[length]; memset(filter,
 
 myBloom::myBloom(std::string newFilter) : myBloom(newFilter.length()) { strncpy(filter,newFilter.c_str(),length); }
 
-void myBloom::insert(std::string item) { filter[count++] = item[0]; }
+void myBloom::insert(std::string item) { filter[count] = item[0]; count=(count+1)%length; }
 
 bool myBloom::exists(std::string item) {
     for (int ii = 0; ii < length; ii++)
