@@ -21,7 +21,6 @@ public:
     ~myBloom();
 private:
     char *filter;
-    int count=0;
 };
 
 #endif //BLOOMFILTER_MYBLOOM_H
