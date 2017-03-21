@@ -45,7 +45,7 @@ public:
     /**
      * Destructor for the Bloom object
      */
-    virtual ~Bloom()=0;
+    virtual ~Bloom() {};
 
 protected:
     int length; /** The length of the Bloom filter, in chars. */
